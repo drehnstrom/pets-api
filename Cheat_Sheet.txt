@@ -8,7 +8,7 @@ curl -X POST --data '{"name": "Gertel", "breed": "Shepherd"}'  http://localhost:
 curl http://localhost:8080/pets/1
 
 # Update 1 pet
-curl -X PUT --data '{"breed": "Maltepoo"}'  http://localhost:8080/pets/2
+curl -X PATCH --data '{"breed": "Changed"}'  http://localhost:8080/pets/5
 
 
 # Update 1 pet

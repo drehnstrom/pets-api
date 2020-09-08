@@ -3,7 +3,7 @@
     title: Pets API
     description: Pets API on Cloud Endpoints with a Cloud Run backend
     version: 1.0.0
-  host: gateway-pets-api-6jsjyo3v7a-uc.a.run.app
+  host: pets-api-6jsjyo3v7a-uc.a.run.app
   schemes:
     - https
   produces:
@@ -58,7 +58,7 @@
             description: A successful response
             schema:
               type: string
-      put:
+      patch:
         summary: Update a pet
         operationId: updatePet
         parameters:

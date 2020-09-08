@@ -8,7 +8,8 @@ api = Api(app)
 PETS = {
   '1': {'name': 'Noir', 'breed': 'Schnoodle'},
   '2': {'name': 'Bree', 'breed': 'Mutt'},
-  '3': {'name': 'Sparky', 'breed': 'Retriever'}
+  '3': {'name': 'Gigi', 'breed': 'Retriever'},
+  '4': {'name': 'Gretyl', 'breed': 'Shepherd'}
 }
 
 
@@ -34,7 +35,7 @@ class Pet(Resource):
         else:
             return PETS[pet_id]
 
-    def put(self, pet_id):
+    def patch(self, pet_id):
         data = request.get_json(True)
         if pet_id not in PETS:
             return "Record not found", 404
