@@ -1,0 +1,64 @@
+swagger: '2.0'
+info:
+  title: Pets API
+  description: Really nice API for managing pets.
+  version: "1.0"
+
+host: pets-api-dot-doug-rehnstrom.appspot.com
+basePath: /v1
+schemes:
+    - https
+produces:
+    - application/json
+
+x-google-backend:
+    address: https://doug-rehnstrom.uc.r.appspot.com
+
+paths:
+  /pets:
+    get:
+      operationId: getPets  
+      summary: Gets all the pets. 
+      responses:
+          '200':
+            description: A successful response
+            schema:
+              type: string
+    
+    post:
+      operationId: addPet  
+      summary: Add a new Pet
+      responses:
+        "201":
+          description: Pet added succesfully.
+          schema:
+              type: string
+
+       
+  /pets/{pet_id}:
+    get:  
+      operationId: getPet  
+      summary: Get a single pet based on its ID.
+      responses:
+        "200":
+          description: Pet retrieved successfully
+          schema:
+              type: string
+          
+    delete:
+      operationId: deletePet  
+      summary: Delete a pet based on its ID.
+      responses:
+        "204":
+          description: Success.
+          schema:
+              type: string
+    put:
+      operationId: updatePet    
+      summary: Update a pet.
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          schema:
+              type: string
+

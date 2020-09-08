@@ -1,0 +1,74 @@
+  swagger: '2.0'
+  info:
+    title: Pets API
+    description: Pets API on Cloud Endpoints with a Cloud Run backend
+    version: 1.0.0
+  host: gateway-pets-api-6jsjyo3v7a-uc.a.run.app
+  schemes:
+    - https
+  produces:
+    - application/json
+  x-google-backend:
+    address: https://pets-api-6jsjyo3v7a-uc.a.run.app/
+    protocol: h2
+  paths:
+    /pets:
+      get:
+        summary: Get All the pets
+        operationId: getPets
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: string
+      post:
+        summary: Add a pet
+        operationId: addPet
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: string
+    /pets/{petId}:
+      get:
+        summary: Return pet by ID
+        operationId: getPet
+        parameters:
+        - in: path
+          name: petId
+          required: true
+          type: integer
+          minimum: 1
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: string
+      delete:
+        summary: Delete a pet
+        operationId: deletePet
+        parameters:
+        - in: path
+          name: petId
+          required: true
+          type: integer
+          minimum: 1
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: string
+      put:
+        summary: Update a pet
+        operationId: updatePet
+        parameters:
+        - in: path
+          name: petId
+          required: true
+          type: integer
+          minimum: 1
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: string

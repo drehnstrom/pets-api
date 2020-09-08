@@ -1,0 +1,21 @@
+# Get all Pets
+curl http://localhost:8080/pets
+
+# Add a pet
+curl -X POST --data '{"name": "Gertel", "breed": "Shepherd"}'  http://localhost:8080/pets
+
+# Get one pet
+curl http://localhost:8080/pets/1
+
+# Update 1 pet
+curl -X PUT --data '{"breed": "Maltepoo"}'  http://localhost:8080/pets/2
+
+
+# Update 1 pet
+curl -X DELETE  http://localhost:8080/pets/3
+
+
+
+
+
+
