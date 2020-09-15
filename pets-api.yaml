@@ -4,7 +4,7 @@ info:
   description: Really nice API for managing pets.
   version: "1.0"
 
-host: pets-api-dot-doug-rehnstrom.appspot.com
+host: pets-api-6jsjyo3v7a-uc.a.run.app
 basePath: /v1
 schemes:
     - https
@@ -12,7 +12,7 @@ produces:
     - application/json
 
 x-google-backend:
-    address: https://doug-rehnstrom.uc.r.appspot.com
+    address: https://pets-api-6jsjyo3v7a-uc.a.run.app/
 
 paths:
   /pets:
@@ -53,12 +53,12 @@ paths:
           description: Success.
           schema:
               type: string
-    put:
+    patch:
       operationId: updatePet    
       summary: Update a pet.
       responses:
         "200":
-          description: Auto generated using Swagger Inspector
+          description: Change a pet based on its ID
           schema:
               type: string
 

@@ -3,13 +3,13 @@
     title: Pets API
     description: Pets API on Cloud Endpoints with a Cloud Run backend
     version: 1.0.0
-  host: pets-api-6jsjyo3v7a-uc.a.run.app
+  host: gateway-pets-api-6jsjyo3v7a-uc.a.run.app
   schemes:
     - https
   produces:
     - application/json
   x-google-backend:
-    address: https://pets-api-6jsjyo3v7a-uc.a.run.app/
+    address: https://gateway-pets-api-6jsjyo3v7a-uc.a.run.app/
     protocol: h2
   paths:
     /pets:
