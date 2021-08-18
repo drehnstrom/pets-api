@@ -14,6 +14,7 @@ PETS = {
   '6': {'name': 'Duchess', 'breed': 'Terrier'},
   '7': {'name': 'Sparky', 'breed': 'Mutt'},
   '8': {'name': 'Arwen', 'breed': 'Mix'},
+  '9': {'name': 'Jax', 'breed': 'Mix'},
 }
 
 
