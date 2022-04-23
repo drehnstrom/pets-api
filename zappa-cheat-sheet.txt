@@ -1,0 +1,15 @@
+# To use Zappa
+pip install zappa
+
+# To Create the zappa)settings.json file
+zappa init
+
+# To Deploy to AWS Lambda
+zappa deploy
+
+# To upgrade a deployment
+zappa update
+
+# When you update the API Gateway URL is returned
+# The following subdomain is mapped to the API:
+http://pets2.dougs-demos.com/pets
