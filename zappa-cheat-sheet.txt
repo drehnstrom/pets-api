@@ -7,8 +7,11 @@ zappa init
 # To Deploy to AWS Lambda
 zappa deploy
 
-# To upgrade a deployment
-zappa update
+# To upgrade the prod deployment
+zappa update prod
+
+# To upgrade test deployment (See Zappa configuration file)
+zappa update test
 
 # When you update the API Gateway URL is returned
 # The following subdomain is mapped to the API:
