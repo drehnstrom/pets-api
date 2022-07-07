@@ -8,7 +8,6 @@ api = Api(app)
 PETS = {
   '1': {'name': 'Noir', 'breed': 'Schnoodle'},
   '2': {'name': 'Bree', 'breed': 'Mutt'},
-  '3': {'name': 'Gigi', 'breed': 'Retriever'},
 }
 
 
